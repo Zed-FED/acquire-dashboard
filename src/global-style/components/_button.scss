@@ -1,0 +1,13 @@
+.mat-flat-button.mat-primary {
+  background: linear-gradient(180deg, #FFDD86 0%, #FFB84F 100%);
+  color: #89570D;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 50px;
+}
+.btn-half-rounded {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

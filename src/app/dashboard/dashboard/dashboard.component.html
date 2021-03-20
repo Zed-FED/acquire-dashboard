@@ -1,0 +1,169 @@
+<div class="dashboard-wrapper">
+  <div class="col-span-2">
+    <mat-card class="shadow mb-30px px-0 pb-0 d-flex flex-column border-radius-15px overflow-hidden">
+      <div class="d-flex align-items-center justify-content-between px-20px">
+        <h2 class="font-weight-bold font-x-large">Comparison</h2>
+
+        <button mat-icon-button>
+          <span class="ic-transfer font-x-large"></span>
+        </button>
+      </div>
+
+      <div class="px-20px comparison-graph-wrapper">
+        <div class="d-flex align-items-center">
+          <div>
+            <h4 class="mb-0 font-regular text-primary-light">Your business</h4>
+            <h3 class="font-xx-large d-flex align-items-center font-weight-bold">$10.00 <small class="font-weight-normal text-secondary font-small ml-5px">+24%</small></h3>
+          </div>
+          <div>
+            <app-bar-chart></app-bar-chart>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div>
+            <h4 class="mb-0 font-regular text-primary-light">Your competitor</h4>
+            <h3 class="font-xx-large d-flex align-items-center font-weight-bold">$12.60 <small
+                class="font-weight-normal text-danger font-small ml-5px">-16%</small></h3>
+          </div>
+          <div>
+            <app-bar-chart></app-bar-chart>
+          </div>
+        </div>
+      </div>
+
+      <button mat-flat-button color="primary" class="btn-half-rounded">See Details</button>
+    </mat-card>
+
+
+    <div class="product-report-wrapper mb-30px">
+      <div class="d-flex align-items-center justify-content-between">
+        <h2 class="font-weight-bold font-x-large">Product sales report</h2>
+
+        <button mat-button class="text-primary">
+          View all products
+        </button>
+      </div>
+      <div class="product-report-wrapper-grid">
+        <div>
+          <img src="assets/images/bike-image.png" alt="" class="w-full border-radius-10px">
+          <div class="bg-white p-15px border-radius-10px shadow d-flex align-items-center justify-content-between mx-15px mt-n-30px position-relative">
+            <div>
+              <h4 class="text-primary font-weight-bold font-size-x-large">
+                Tigaroda oye bike
+              </h4>
+              <p class="font-small text-primary">
+                <span class="ic-time mr-5px text-primary"></span>
+                <span class="text-primary-light">Published</span>
+                <strong class="ml-5px">15 Dec 2019</strong>
+              </p>
+            </div>
+            <!-- <a href="#" class="text-yellow">Detail</a> -->
+            <button mat-flat-button class="text-yellow">Details</button>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="border border-link-water border-radius-10px mb-20px d-flex flex-grow-1 align-items-center">
+            <app-line-chart class="w-full"></app-line-chart>
+          </div>
+          <div class="d-grid col-span-2 gap-20px">
+            <div class="bg-light p-10px border-radius-10px p-10px">
+              <h4 class="text-primary font-weight-bold font-regular mb-5px">Most Impressions</h4>
+              <div class="d-flex align-items-start mb-5px">
+                <i class="material-icons text-secondary font-small mt-5px">panorama_fish_eye</i>
+                <div class="ml-5px">
+                  <h5 class="text-primary font-weight-bold mb-0">Europe</h5>
+                  <span class="text-primary-light font-small">34%</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <i class="material-icons text-yellow font-small mt-5px">panorama_fish_eye</i>
+                <div class="ml-5px">
+                  <h5 class="text-primary font-weight-bold mb-0">America</h5>
+                  <span class="text-primary-light font-small">28%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-10px border-radius-10px p-10px shadow">
+              <div class="d-flex align-items-center">
+                <img src="assets/images/bicycle.svg" alt="" class="border-radius-10px mr-10px">
+                <h5 class="text-primary font-weight-bold my-0">Tigaroda oye bike</h5>
+              </div>
+              <div class="mt-10px mb-5px">
+                <span class="font-small text-primary-light">This month</span>
+                <div class="mt-5px">
+                  <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+              </div>
+              <div class="">
+                <span class="font-small text-primary-light">Last month</span>
+                <div class="mt-5px">
+                  <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="border border-link-water p-20px bg-white d-flex flex-column" style="border-top-left-radius: 50px;">
+
+      <h2 class="text-center font-weight-bold font-x-large">Goals Performance</h2>
+      <app-radial-chart></app-radial-chart>
+
+      <div class="my-30px bg-light p-15px border-radius-10px d-grid col-span-2 gap-20px">
+        <div class="bg-white border-radius-10px shadow p-15px">
+          <h4 class="mb-0 font-regular text-primary-light">This month</h4>
+          <h3 class="font-large d-flex align-items-center font-weight-bold text-yellow">$4.200 <small
+              class="font-weight-normal text-secondary font-small ml-5px">+24%</small></h3>
+        </div>
+        <div class="p-15px">
+          <h4 class="mb-0 font-regular text-primary-light">Last month</h4>
+          <h3 class="font-large d-flex align-items-center font-weight-bold text-primary">$4.008 <small
+              class="font-weight-normal text-secondary font-small ml-5px">+4%</small></h3>
+        </div>
+      </div>
+
+      <div class="bg-light p-10px border-radius-10px p-10px mb-30px">
+        <h4 class="text-primary font-weight-bold font-regular mb-5px">Most Impressions</h4>
+        <div class="d-grid col-span-2 gap-10px">
+          <div class="d-flex align-items-start mb-5px">
+            <i class="material-icons text-secondary font-small mt-5px">panorama_fish_eye</i>
+            <div class="ml-5px">
+              <h5 class="text-primary font-weight-bold mb-0">Europe</h5>
+              <span class="text-primary-light font-small">34%</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-start">
+            <i class="material-icons text-yellow font-small mt-5px">panorama_fish_eye</i>
+            <div class="ml-5px">
+              <h5 class="text-primary font-weight-bold mb-0">America</h5>
+              <span class="text-primary-light font-small">28%</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start mb-5px">
+            <i class="material-icons text-secondary font-small mt-5px">panorama_fish_eye</i>
+            <div class="ml-5px">
+              <h5 class="text-primary font-weight-bold mb-0">Asia</h5>
+              <span class="text-primary-light font-small">22%</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-start">
+            <i class="material-icons text-yellow font-small mt-5px">panorama_fish_eye</i>
+            <div class="ml-5px">
+              <h5 class="text-primary font-weight-bold mb-0">Africa</h5>
+              <span class="text-primary-light font-small">16%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button mat-flat-button color="primary" class="border-radius-20px">View Full Report</button>
+
+  </div>
+</div>

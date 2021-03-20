@@ -1,0 +1,15 @@
+<aside class="d-flex flex-column h-full position-relative">
+  <div class="logo">
+    <img src="assets/images/logo.svg" alt="">
+  </div>
+  <div class="main-nav d-flex flex-grow-1" role="navigation">
+    <ul class="d-flex flex-column flex-grow-1 px-0 pb-40px">
+      <li *ngFor="let item of mainNav">
+        <a routerLink="{{item.link}}" routerLinkActive="active">
+          <span class="ic-{{item.icon}}"></span>
+          <span>{{ item.menuItem }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>

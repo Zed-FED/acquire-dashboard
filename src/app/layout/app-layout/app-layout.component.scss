@@ -1,0 +1,17 @@
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "sidebar nav"
+    "sidebar main";
+  height: 100%;
+}
+
+.main {
+  grid-area: main;
+  height: 100%;
+  overflow: auto;
+  // background-color: #f7f7f8;
+  // background-color: #f4f3ef;
+}

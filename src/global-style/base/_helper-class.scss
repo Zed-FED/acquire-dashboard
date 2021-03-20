@@ -1,0 +1,337 @@
+// font size
+@each $name, $value in $font-size {
+  .font-#{$name} {
+    font-size: $value !important;
+  }
+}
+
+// font weight
+@each $name, $value in $font-weight {
+  .font-weight-#{$name} {
+    font-weight: $value !important;
+  }
+}
+
+// text, border and background color
+@each $name, $value in $app-colors {
+  .text-#{$name} {
+    color: $value !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+
+  .border-#{$name} {
+    border-color: $value !important;
+  }
+}
+
+// height
+@each $name, $value in $height {
+  .h-#{$name} {
+    height: $value !important;
+  }
+
+  .h-min-#{$name} {
+    min-height: $value !important;
+  }
+}
+
+// width
+@each $name, $value in $width {
+  .w-#{$name} {
+    width: $value !important;
+  }
+}
+
+// min-width
+@each $name, $value in $minWidth {
+  .min-w-#{$name} {
+    min-width: $value !important;
+  }
+}
+
+// for margin and padding
+@each $size in $padding-margin {
+  .p-#{$size} {
+    padding: #{$size} !important;
+  }
+
+  .pl-#{$size},
+  .px-#{$size} {
+    padding-left: #{$size} !important;
+  }
+
+  .pr-#{$size},
+  .px-#{$size} {
+    padding-right: #{$size} !important;
+  }
+
+  .pt-#{$size},
+  .py-#{$size} {
+    padding-top: #{$size} !important;
+  }
+
+  .pb-#{$size},
+  .py-#{$size} {
+    padding-bottom: #{$size} !important;
+  }
+
+  .m-#{$size} {
+    margin: #{$size} !important;
+  }
+
+  .ml-#{$size},
+  .mx-#{$size} {
+    margin-left: #{$size} !important;
+  }
+
+  .mr-#{$size},
+  .mx-#{$size} {
+    margin-right: #{$size} !important;
+  }
+
+  .mt-#{$size},
+  .my-#{$size} {
+    margin-top: #{$size} !important;
+  }
+
+  .mb-#{$size},
+  .my-#{$size} {
+    margin-bottom: #{$size} !important;
+  }
+}
+
+.mt-v-15px {
+  margin-top: -15px;
+}
+
+// for display
+@each $value in $display {
+  .d-#{$value} {
+    display: $value !important;
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+// for position
+@each $value in $position {
+  .position-#{$value} {
+    position: $value !important;
+  }
+}
+
+// for bg colors
+// @each $value in $colors {
+//   .bg-#{$value} {
+//     background-color: $value !important;
+//   }
+// }
+
+//for flex
+
+.flex-column {
+  flex-direction: column;
+}
+
+@each $name, $value in $align-items {
+  .align-items-#{$name} {
+    align-items: $value !important;
+  }
+}
+
+@each $name, $value in $justify-items {
+  .justify-content-#{$name} {
+    justify-content: $value !important;
+  }
+}
+
+@each $name, $value in $align-self {
+  .align-self-#{$name} {
+    align-self: $value !important;
+  }
+}
+
+// Text align
+@each $value in $text-align {
+  .text-#{$value} {
+    text-align: $value !important;
+  }
+}
+
+// Vertical alignment
+@each $value in $vertical-align {
+  .align-#{$value} {
+    vertical-align: $value !important;
+  }
+}
+
+// flex
+@each $value in $flex-direction {
+  .flex-#{$value} {
+    flex-direction: $value !important;
+  }
+}
+
+// grid column
+@each $value in $grid-columns {
+  .col-span-#{$value} {
+    grid-template-columns:repeat($value, (minmax(0,1fr)))  !important;
+  }
+}
+@each $value in $grid-gap {
+  .gap-#{$value} {
+    gap: $value;
+  }
+}
+
+.border-right {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: -2px;
+    width: 2px;
+    background-color: #cccccc;
+  }
+}
+
+.border-left {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.border {
+  border: 1px solid #eee;
+}
+
+.border-primary {
+  // border-color: map-get($theme-colors, primary);
+}
+
+.border-top-dark {
+  border-top: 1px solid #000000;
+}
+
+.mx-n-10px {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.mx-n-30px {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+}
+.mt-n-30px {
+  margin-top: -30px;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+// Offset classes
+.top-0 {
+  top: 0;
+}
+
+//z-index
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+
+//
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Border Radius
+// for display
+@each $value in $border-radius {
+  .border-radius-#{$value} {
+    border-radius: $value !important;
+  }
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.h-min-100px {
+  min-height: 100px !important;
+}
+
+.max-w-200px {
+  max-width: 170px;
+}
+
+.min-width-148px {
+  min-width: 148px !important;
+}
+
+.mat-icon.icon-white {
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.separator {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-color: #00a8ff;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 42%;
+  margin-right: auto;
+  margin-left: -30px;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+
+.border-l {
+  border-left: 1px solid;
+}
+.border-r {
+  border-right: 1px solid;
+}
+.border-t {
+  border-top: 1px solid;
+}
+.border-b {
+  border-bottom: 1px solid;
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+.shadow {
+  box-shadow: 0px 15px 60px 5px rgba(2, 24, 103, 0.08) !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
