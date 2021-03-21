@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  toggle: boolean = false;
+
+  clickEvent(event) {
+    this.toggle = !this.toggle
+  }
+
   mainNav: any[] = [
     {
       menuItem: 'Dashboard',

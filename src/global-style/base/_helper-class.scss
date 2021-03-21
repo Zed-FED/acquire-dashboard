@@ -335,3 +335,22 @@
 .flex-grow-1 {
   flex-grow: 1;
 }
+
+
+@media screen and (max-width: 767px) {
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .px-sm-15px {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .mr-sm-0 {
+    margin-right: 0!important
+  }
+
+  .ml-sm-40px {
+    margin-left: 40px !important;
+  }
+}

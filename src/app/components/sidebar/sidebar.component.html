@@ -1,4 +1,4 @@
-<aside class="d-flex flex-column h-full position-relative">
+<aside class="d-flex flex-column h-full app-sidebar" [ngClass]="{'active': toggle}">
   <div class="logo">
     <img src="assets/images/logo.svg" alt="">
   </div>
@@ -12,4 +12,12 @@
       </li>
     </ul>
   </div>
+
 </aside>
+<button type="button" class="nav-button" (click)="clickEvent($event)" [ngClass]="{'active': toggle}">
+  <span class="bar bar1"></span>
+  <span class="bar bar2"></span>
+  <span class="bar bar3"></span>
+  <span class="bar bar4"></span>
+</button>
+

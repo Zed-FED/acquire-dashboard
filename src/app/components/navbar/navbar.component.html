@@ -1,7 +1,7 @@
-<div class="d-flex bg-white navbar px-30px py-15px align-items-center justify-content-between">
-  <h1 class="mb-0 text-primary font-weight-bold font-xx-large">Your Dashboard</h1>
+<div class="d-flex bg-white navbar px-30px py-15px px-sm-15px align-items-center justify-content-between">
+  <h1 class="mb-0 text-primary font-weight-bold font-xx-large ml-sm-40px">Your Dashboard</h1>
 
-  <div class="navbar-select">
+  <div class="navbar-select d-sm-none">
     <mat-form-field appearance="fill">
       <mat-select  [(value)]="selected" placeholder="">
         <mat-option *ngFor="let item of timeFrames" [value]="item.value">
@@ -13,7 +13,7 @@
   </div>
 
   <div class="d-flex align-items-center">
-    <button mat-icon-button>
+    <button mat-icon-button class="d-sm-none">
       <span class="ic-mail"></span>
     </button>
     <button mat-icon-button matBadge="1" matBadgePosition="after" matBadgeColor="primary" matBadgeSize="small">
@@ -23,8 +23,8 @@
 
 
     <button class="d-flex align-items-center ml-15px cursor-pointer p-5px" mat-button [matMenuTriggerFor]="userMenu">
-      <img src="assets/images/img-user.png" alt="" class="border-radius-30px mr-10px">
-      <span class="text-primary font-weight-bold">Hey, Dustin! <span class="ic-down-arrow ml-10px"></span></span>
+      <img src="assets/images/img-user.png" alt="" class="border-radius-30px mr-10px mr-sm-0">
+      <span class="text-primary font-weight-bold d-sm-none">Hey, Dustin! <span class="ic-down-arrow ml-10px"></span></span>
     </button>
     <mat-menu #userMenu="matMenu">
       <button mat-menu-item>Item 1</button>

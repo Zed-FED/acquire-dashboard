@@ -6,6 +6,10 @@
     "sidebar nav"
     "sidebar main";
   height: 100%;
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 0px 1fr;
+  }
 }
 
 .main {
